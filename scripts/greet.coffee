@@ -18,7 +18,7 @@
 
 module.exports = (robot) ->
 
-  robot.respond /ちっちさん/i, (msg) ->
+  robot.hear /ちっちさん/i, (msg) ->
     msg.send "Hi! ぼくがちっちさんだよ！"
 
   robot.hear /ちかれた/i, (msg) ->
