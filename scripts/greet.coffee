@@ -20,3 +20,9 @@ module.exports = (robot) ->
 
   robot.respond /ちっちさん/i, (msg) ->
     msg.send "Hi! ぼくがちっちさんだよ！"
+
+  robot.hear /ちかれた/i, (msg) ->
+    msg.send "苦しいのか？いいぞ、修造！"
+
+  robot.hear /かわいこちゃん/i, (msg) ->
+    msg.send "呼んだ？"
