@@ -21,6 +21,9 @@ module.exports = (robot) ->
   robot.hear /(生|い)きてる/i, (msg) ->
     msg.reply "死んでます"
 
+  robot.hear /イイネ！/i, (msg) ->
+    msg.reply ":sparkles:ฅʕ•ᴥ•ʔฅ:sparkles:ฅʕ•ᴥ•ʔฅ:sparkles:"
+
   robot.hear /ちっちさん/i, (msg) ->
     hisName = msg.random [
       "Hi! ぼくがちっちさんだよ！"
@@ -48,13 +51,18 @@ module.exports = (robot) ->
     msg.reply "#{soTired}"
 
   robot.hear /かわいこちゃん/i, (msg) ->
-    msg.reply "呼んだ？"
+    cawawa = msg.random [
+      "呼んだ？"
+      "はいはい"
+    ]
+    msg.reply "#{cawawa}"
 
   robot.hear /うざい/i, (msg) ->
-    msg.reply "心が荒んでいるんだね？"
-
-  robot.hear /イイネ!/i, (msg) ->
-    msg.reply ":sparkles:ฅʕ•ᴥ•ʔฅ:sparkles:ฅʕ•ᴥ•ʔฅ:sparkles:"
+    uza = msg.random [
+      "心が荒んでいるんだね？"
+      "...？"
+    ]
+    msg.reply "#{uza}"
 
   robot.hear /(帰|かえ)る/i, (msg) ->
     comingHome = msg.random [
