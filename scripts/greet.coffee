@@ -8,7 +8,7 @@
 #   None
 #
 # Commands:
-#   hubot ちっちさん - "ぼくがちっちさんだよ！"と返答する（うざい
+#
 #
 # Notes:
 #   None
