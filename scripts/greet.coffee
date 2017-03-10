@@ -39,7 +39,7 @@ module.exports = (robot) ->
   robot.hear /いいね/i, (msg) ->
     msg.reply ":sparkles:ฅʕ•ᴥ•ʔฅ:sparkles:ฅʕ•ᴥ•ʔฅ:sparkles:"
 
-  robot.hear /(帰|かえ)るね/i, (msg) ->
+  robot.hear /(帰|かえ)る/i, (msg) ->
     comingHome = msg.random [
       "今日の夜ごはんはなんだろう？"
       "弁当箱、持ったかー！？"
