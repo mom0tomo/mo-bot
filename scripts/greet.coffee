@@ -21,6 +21,9 @@ module.exports = (robot) ->
   robot.hear /ちっちさん/i, (msg) ->
     msg.reply "Hi! ぼくがちっちさんだよ！"
 
+  robot.hear /(生|い)きてる/i, (msg) ->
+    msg.reply "死んでます"
+
   robot.hear /ちかれた/i, (msg) ->
     msg.reply "苦しい時ほど、笑ってごらん"
 
