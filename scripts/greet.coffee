@@ -19,13 +19,31 @@
 module.exports = (robot) ->
 
   robot.hear /ちっちさん/i, (msg) ->
-    msg.send "Hi! ぼくがちっちさんだよ！"
+    msg.reply "Hi! ぼくがちっちさんだよ！"
 
   robot.hear /ちかれた/i, (msg) ->
-    msg.send "苦しいのか？いいぞ、修造！"
+    msg.reply "苦しい時ほど、笑ってごらん"
+
+  robot.hear /(疲|つか)れた/i, (msg) ->
+    msg.reply "次に叩く一回で、その壁は破れるかもしれない"
 
   robot.hear /かわいこちゃん/i, (msg) ->
-    msg.send "呼んだ？"
+    msg.reply "呼んだ？"
 
   robot.hear /うざい/i, (msg) ->
-    msg.send "心が荒んでいるんだね？"
+    msg.reply "心が荒んでいるんだね？"
+
+  robot.hear /いいね/i, (msg) ->
+    msg.reply ":sparkles:ฅʕ•ᴥ•ʔฅ:sparkles:ฅʕ•ᴥ•ʔฅ:sparkles:"
+
+  robot.respond /(帰|かえ)るね/i, (msg) ->
+    comingHome = msg.random [
+      "今日の夜ごはんはなんだろう？"
+      "弁当箱、持ったかー！？"
+      "こんなとこ、とっととおさらばしてやる！"
+      "今日のお昼は何食べた？"
+      "人間だもの"
+    ]
+    msg.reply "#{comingHome}"
+
+
