@@ -25,5 +25,5 @@ module.exports = (robot) ->
     start:    true
     timeZone: "Asia/Tokyo"
     onTick: ->
-      robot.send {room: "#general"}, "今週もお疲れさま！びーるっっっ！"
+      robot.send {room: "#general"}, "今週もおつかれさま！帰宅！"
   )
